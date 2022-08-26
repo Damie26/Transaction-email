@@ -28,6 +28,44 @@ Order confirmaton Project:
       p{
          font-size: 15px;
       }
+      @media screen and (max-width:599.98px){
+         .d-600-none{
+            display: none !important;
+         }
+      }
+      @media screen and (max-width:399.98px){
+         .three-columns .padding{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+         }
+         .d-600-none{
+            display: none !important;
+         }
+      }
+
+      :root{
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme:dark) {
+        
+         body, center, table {
+         background: #2d2d2d !important;
+         color: #ffffff !important;
+        }
+        .bg-darkmode {
+         background-color: #717171!important;
+        }
+        .bg-logo{
+         background-color: #9C9C9C !important;
+         color: #2d2d2d !important;
+        }
+        p, a{
+         color: #ffffff!important;
+        }
+        
+      }
 
    </style>
    <!--[if gte mso 9|(IE)]>
